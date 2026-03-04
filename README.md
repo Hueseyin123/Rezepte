@@ -6,40 +6,40 @@ This is a Project for people who wants to prepare a recipe i build this website 
 
 #### Step 1: Install Git
 
-....* Download Git from the website and install it on your System
+* Download Git from the website and install it on your System
 
 #### Step 2: Open Your Terminal or PowerShell
 
-....* On Windows, open PowerShell
-....* On macOS or Linux, open the Terminal
+* On Windows, open PowerShell
+* On macOS or Linux, open the Terminal
 
 #### Step 3: Navigate to Your Folder where you want to Start the Project
 
-....* Choose the location where you want the project to be saved
+* Choose the location where you want the project to be saved
 
-....* Move into that folder using:
+* Move into that folder using:
 
 > cd path/to/your/choosen/folder
 
 #### Step 4: Clone the Repository
 
-....* Copy the respository Url From GitHub
+* Copy the respository Url From GitHub
 
-....* Run this command to Clone it:
+* Run this command to Clone it:
 
 > git clone git@github.com:Hueseyin123/Rezepte.git
 
 #### Step 5: Enter the Project Folder
 
-....* After Cloning is Finished open the Projects directory
+* After Cloning is Finished open the Projects directory
 
 > cd Project-Name
 
 #### Step 6: Install
 
-....* Its important to install Alle the packages Like "package.json, ..."
+* Its important to install Alle the packages Like "package.json, ..."
 
-....* To install these packages you need to execute this command:
+* To install these packages you need to execute this command:
 
 ### `Node.js`:
 
