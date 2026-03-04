@@ -1,37 +1,47 @@
+import { Col, Layout, Row } from "antd";
+import "./index.css";
+import AppHeaderNew from "./components/Appheader/AppheaderNew";
+import AppRoutes from "./Routes";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Category from "./pages/Category";
-import ReviewDetails from "./pages/ReviewDetails";
-import SiteHeader from "./components/SiteHeader";
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client/react";
+import AuthProvider from "./context/AuthProvider";
 
-import { ApolloClient, InMemoryCache} from '@apollo/client';
-import { ApolloProvider } from '@apollo/client/react';
-import { HttpLink } from "@apollo/client";
+const { Header, Content } = Layout;
 
- const link = new HttpLink({
-  uri: 'http://localhost:1337/graphql',
+const link = new HttpLink({
+  uri: "http://localhost:1337/graphql",
 });
 
 const client = new ApolloClient({
   link: link,
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
 });
 
-function App() {
+export default function App() {
   return (
-    <ApolloProvider client={client}>
-      <Router>
-        <div className="App">
-          <SiteHeader />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/category/:id" element={<Category />} />
-          </Routes>
-        </div>
-      </Router>
-    </ApolloProvider>
+    <>
+      <div className="overlay"></div>
+
+      <ApolloProvider client={client}>
+        <AuthProvider>
+          <Row gutter={[0, 32]}>
+            
+            <Col span={24}>
+              <Header style={{ padding: 0, background: "transparent" }}>
+                <AppHeaderNew />
+              </Header>
+            </Col>
+
+            <Col span={22} offset={1}>
+              <Content style={{ background: "transparent" }}>
+                <AppRoutes />
+              </Content>
+            </Col>
+
+          </Row>
+        </AuthProvider>
+      </ApolloProvider>
+    </>
   );
 }
-
-export default App;
