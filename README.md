@@ -108,47 +108,47 @@ You can Start the Project with the following Command:
 
 ## Code Funktionen:
 
-* Appheader.jsx
+* `Appheader.jsx`
 Responsible for the Appheader (the top section of the website) for Logout, Login, Theme switching ect..
 
-* Profile.jsx
+* `Profile.jsx`
 Profile page: allows users to update their personal data and prevents spam
 by activating a 15‑second lock after too many update attempts.
 
-* SocialCards.jsx
+* `SocialCards.jsx`
 Not fully used, SocialCards page: loads all user profiles from the backend
 and displays them as cards with avatar, name, and description.
 
-* AuthContext.js
+* `AuthContext.js`
 Storage location for the user data, accessible from anywhere in the app
 
-* AuthProvider.js
+* `AuthProvider.js`
 Reads the token and loads the current user
 
-* useFetch.js
+* `useFetch.js`
 Simple fetch hook: loads data from a URL, stores it with loading and error states,
 and returns { data, loading, error }.
 
-* useScreenSize.js
+* `useScreenSize.js`
 React hook that monitors the window width and returns
 whether the screen is large enough for desktop view (>= 1024px).
 
-* Category.js
+* `Category.js`
 Loads the recipes of a category and displays their reviews,
 including average rating and pagination.
 
-* Homepage.js
+* `Homepage.js`
 Loads all categories via GraphQL and displays them as large, clickable chips
 
-* SignIn.jsx
+* `SignIn.jsx`
 Responsible for login and its related functions
 
-* SignUp.jsx
+* `SignUp.jsx`
 Responsible for registration and its related functions
 
-* App.js
+* `App.js`
 Entry point of the app: sets up Apollo Client and the AuthProvider,
 and renders the layout with the header and all pages via AppRoutes.
 
-* helpers.js
+* `helpers.js`
 Manages the login token: retrieves it from localStorage,saves it after login, and removes it on logout
