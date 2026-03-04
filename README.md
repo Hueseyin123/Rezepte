@@ -41,9 +41,9 @@ This is a Project for people who wants to prepare a recipe i build this website 
 
 2. > cd frontend
 
-3. > * Step 6 !
+3. * Step 6 !
 
-4. > * Step 7 !
+4. * Step 7 !
 
 * In the Second Terminal:
 
@@ -51,9 +51,9 @@ This is a Project for people who wants to prepare a recipe i build this website 
 
 2. > cd backend
 
-3. > * Step 6 !
+3. * Step 6 !
 
-4. > * Step 7 !
+4. * Step 7 !
 
 #### Step 6: Install
 
