@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Hüseyins Rezepte Website Project
+This is a Project for people who wants to prepare a recipe i build this website with many features, such as a light,dark,default design button you can customize the website to your preference. In Addition you can rate each reciepe and leave your opinion about it. I build this website to help people learn how to prepare food.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
