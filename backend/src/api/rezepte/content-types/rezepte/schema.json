@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rezeptes",
+  "info": {
+    "singularName": "rezepte",
+    "pluralName": "rezeptes",
+    "displayName": "Rezepte"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RezeptNamen": {
+      "type": "string",
+      "required": true
+    },
+    "Rezept": {
+      "type": "text",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "rezeptes"
+    }
+  }
+}

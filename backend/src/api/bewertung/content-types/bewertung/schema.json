@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bewertungen",
+  "info": {
+    "singularName": "bewertung",
+    "pluralName": "bewertungen",
+    "displayName": "Bewertung"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "bewertung": {
+      "type": "integer"
+    },
+    "bewertung_text": {
+      "type": "text"
+    },
+    "rezepte": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rezepte.rezepte"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
