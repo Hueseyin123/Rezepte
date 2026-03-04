@@ -1,3 +1,5 @@
+//zuständig fürs Registrieren und die funktionen
+
 import {Alert,Button,Card,Col,Form,Input,message,Row,Spin,Typography,
     } from "antd";
     import React, { Fragment, useState } from "react";

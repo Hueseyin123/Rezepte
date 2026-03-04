@@ -1,3 +1,5 @@
+//Lädt rezepte einer kategori, zeigt bewertungen und inklusive durschnitt und pagination an
+
 import { gql } from "@apollo/client";
 import { useQuery, useApolloClient } from "@apollo/client/react";
 import { useParams } from "react-router-dom";

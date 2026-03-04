@@ -1,3 +1,7 @@
+// Startpunkt der App, Richtet Apollo Client und AuthProvider ein
+// und rendert das Layout mit Header sowie allen Seiten über AppRoutes.
+
+
 import { Col, Layout, Row } from "antd";
 import "./index.css";
 import AppHeaderNew from "./components/Appheader/AppheaderNew";

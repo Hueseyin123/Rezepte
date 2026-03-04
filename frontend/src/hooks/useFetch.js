@@ -1,3 +1,6 @@
+
+// Einfacher Fetch: Lädt Daten von einer URL, speichert sie zusammen mit Lade und Fehlerstatus und gibt { data, loading, error } zurück.
+
 import { useEffect, useState } from "react";
 
 const useFetch = (uri) => {

@@ -1,3 +1,5 @@
+//zustänndig Für den appheader (Obere spalte der webiste logout,login, theme ändern ect.)
+
 "use client";
 
 import { Link as RouterLink, useNavigate } from "react-router-dom";

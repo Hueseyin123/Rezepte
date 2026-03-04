@@ -1,5 +1,5 @@
-
-// context/AuthProvider.jsx
+// Liest Token aus,
+// lädt den aktuellen Benutzer
 import React, { useState, useEffect, useCallback } from "react";
 import { AuthContext } from "./AuthContext";
 import { message } from "antd";

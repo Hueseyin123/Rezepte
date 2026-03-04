@@ -1,3 +1,6 @@
+// React‑Hook, der die Fensterbreite überwacht und zurückgibt,
+// ob der Bildschirm groß genug für die Desktop‑Ansicht ist (>= 1024px).
+
 import { useEffect, useState } from "react";
 
 const useScreenSize = () => {

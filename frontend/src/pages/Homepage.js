@@ -1,3 +1,7 @@
+
+// Lädt alle Kategorien durch GraphQL und zeigt sie als große klickbare Chips an
+
+
 import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client/react";
 import Chip from '@mui/material/Chip';

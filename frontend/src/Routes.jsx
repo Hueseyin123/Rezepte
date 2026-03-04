@@ -1,4 +1,5 @@
-
+// Definiert alle Seitenrouten der App und schützt die Profil-Seite,
+// indem sie nur angezeigt wird, wenn ein gültiges Login-Token existiert.
 import React from "react";
 import Profile from "./components/Profile/Profile.jsx";
 import { Routes, Route, Navigate } from "react-router-dom";

@@ -1,3 +1,6 @@
+  //wird nicht vollständig benutzt
+  // SocialCards-Seite: lädt alle Nutzerprofile vom Backend
+// und zeigt sie als Karten mit Avatar, Name und Beschreibung an.
   import {
       Button,
       Card,

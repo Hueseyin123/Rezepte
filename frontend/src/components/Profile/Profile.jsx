@@ -1,3 +1,6 @@
+// Profilseit  erlaubt das Ändern der eigenen Nutzerdaten schützt vor spam
+// indem nach zu vielen Updates eine 15Sekunden Sperre aktiviert wird. 
+
 import { Button, Card, Col, Form, Input, Row, Spin } from "antd";
 import { useAuthContext } from "../../context/AuthContext";
 import { API } from "../../constant";
