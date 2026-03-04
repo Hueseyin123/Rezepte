@@ -29,15 +29,35 @@ This is a Project for people who wants to prepare a recipe i build this website 
 
 > git clone git@github.com:Hueseyin123/Rezepte.git
 
-#### Step 5: Enter the Project Folder
+#### Step 5: Enter the Project Folders
 
 * After Cloning is Finished open the Projects directory
 
-> cd Project-Name
+##### but you need to open 2 Terminals so you can Start the Frontend and the Backend!
+
+* In the First Terminal:
+
+1. > cd Rezepte
+
+2. > cd frontend
+
+3. > * Step 6 !
+
+4. > * Step 7 !
+
+* In the Second Terminal:
+
+1. > cd Rezepte
+
+2. > cd backend
+
+3. > * Step 6 !
+
+4. > * Step 7 !
 
 #### Step 6: Install
 
-* Its important to install Alle the packages Like "package.json, ..."
+* Its important to install All the packages Like "package.json, ..."
 
 * To install these packages you need to execute this command:
 
