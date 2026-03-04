@@ -104,3 +104,51 @@ You can Start the Project with the following Command:
 > If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build  dependency from your project.
     Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
     You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+
+## Code Funktionen:
+
+* Appheader.jsx
+Responsible for the Appheader (the top section of the website) for Logout, Login, Theme switching ect..
+
+* Profile.jsx
+Profile page: allows users to update their personal data and prevents spam
+by activating a 15‑second lock after too many update attempts.
+
+* SocialCards.jsx
+Not fully used, SocialCards page: loads all user profiles from the backend
+and displays them as cards with avatar, name, and description.
+
+* AuthContext.js
+Storage location for the user data, accessible from anywhere in the app
+
+* AuthProvider.js
+Reads the token and loads the current user
+
+* useFetch.js
+Simple fetch hook: loads data from a URL, stores it with loading and error states,
+and returns { data, loading, error }.
+
+* useScreenSize.js
+React hook that monitors the window width and returns
+whether the screen is large enough for desktop view (>= 1024px).
+
+* Category.js
+Loads the recipes of a category and displays their reviews,
+including average rating and pagination.
+
+* Homepage.js
+Loads all categories via GraphQL and displays them as large, clickable chips
+
+* SignIn.jsx
+Responsible for login and its related functions
+
+* SignUp.jsx
+Responsible for registration and its related functions
+
+* App.js
+Entry point of the app: sets up Apollo Client and the AuthProvider,
+and renders the layout with the header and all pages via AppRoutes.
+
+* helpers.js
+Manages the login token: retrieves it from localStorage,saves it after login, and removes it on logout
